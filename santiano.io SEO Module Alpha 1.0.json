@@ -1,0 +1,608 @@
+{
+    "exportFormatVersion": 2,
+    "exportTime": "2018-01-24 12:29:34",
+    "containerVersion": {
+        "path": "accounts/1008367944/containers/8204678/versions/0",
+        "accountId": "1008367944",
+        "containerId": "8204678",
+        "containerVersionId": "0",
+        "container": {
+            "path": "accounts/1008367944/containers/8204678",
+            "accountId": "1008367944",
+            "containerId": "8204678",
+            "name": "santiano.io - Module - SEO",
+            "publicId": "GTM-W2MTRDZ",
+            "usageContext": [
+                "WEB"
+            ],
+            "fingerprint": "1516796707826",
+            "tagManagerUrl": "https://tagmanager.google.com/#/container/accounts/1008367944/containers/8204678/workspaces?apiLink=container"
+        },
+        "tag": [
+            {
+                "accountId": "1008367944",
+                "containerId": "8204678",
+                "tagId": "2",
+                "name": "SEO Monitoring to gaEvent",
+                "type": "html",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "html",
+                        "value": "<script>\n\nvar seoTestMetaRobotsIsNoFollow = {{seoTestMetaRobotsIsNoFollow}};\nvar seoTestMetaRobotsIsNoIndex = {{seoTestMetaRobotsIsNoIndex}};\nvar seoTestUrlCurrentIsNotCanonical = {{seoTestUrlCurrentIsNotCanonical}};\nvar eventCategory = 'SEO Monitoring by santiano.io';\n\nif (seoTestMetaRobotsIsNoFollow) {\n  dataLayer.push ({'event': 'gaEvent',\n                   'eventCategory': eventCategory,\n                   'eventAction': 'page is set to nofollow',\n                   'eventLabel': '{{seoUrlCurrent}}'\n                });\n  \n}  \n  \nif (seoTestMetaRobotsIsNoIndex) {\n  dataLayer.push ({'event': 'gaEvent',\n                   'eventCategory': eventCategory,\n                   'eventAction': 'page is set to noindex',\n                   'eventLabel': '{{seoUrlCurrent}}'\n                });\n  \n}  \n  \nif (seoTestUrlCurrentIsNotCanonical) {\n  dataLayer.push ({'event': 'gaEvent',\n                   'eventCategory': eventCategory,\n                   'eventAction': 'page is not matching its canonical tag',\n                   'eventLabel': '{{seoUrlCurrent}}'\n                });\n  \n}  \n\n\n</script>"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "supportDocumentWrite",
+                        "value": "false"
+                    }
+                ],
+                "fingerprint": "1516795575387",
+                "firingTriggerId": [
+                    "2147479553"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT"
+            },
+            {
+                "accountId": "1008367944",
+                "containerId": "8204678",
+                "tagId": "1",
+                "name": "santiano.io - Apache V2.0 Licence",
+                "type": "html",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "html",
+                        "value": "<!-- santiano.io is released under Apache V2.0 licence.\n\n                 _   _                    _       \n                | | (_)                  (_)      \n ___  __ _ _ __ | |_ _  __ _ _ __   ___   _  ___  \n/ __|/ _` | '_ \\| __| |/ _` | '_ \\ / _ \\ | |/ _ \\ \n\\__ \\ (_| | | | | |_| | (_| | | | | (_) || | (_) |\n|___/\\__,_|_| |_|\\__|_|\\__,_|_| |_|\\___(_)_|\\___/ \n                                                  \nCopyright 2017 Santiano Consulting SAS (santiano.io)\n\n   Licensed under the Apache License, Version 2.0 (the \"License\");\n   you may not use this file except in compliance with the License.\n   You may obtain a copy of the License at\n\n       http://www.apache.org/licenses/LICENSE-2.0\n\n   Unless required by applicable law or agreed to in writing, software\n   distributed under the License is distributed on an \"AS IS\" BASIS,\n   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n   See the License for the specific language governing permissions and\n   limitations under the License.\n\n-->"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "supportDocumentWrite",
+                        "value": "false"
+                    }
+                ],
+                "fingerprint": "1516794702897",
+                "tagFiringOption": "ONCE_PER_EVENT"
+            }
+        ],
+        "variable": [
+            {
+                "accountId": "1008367944",
+                "containerId": "8204678",
+                "variableId": "32",
+                "name": "facebookOpenGraphDescription",
+                "type": "jsm",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "javascript",
+                        "value": "function() {\n\t// grabing the content of that tag\n\t// <meta property=\"og:title\" content=\"XXXXXX\" />\n    var ogDescription = document.querySelector('meta[property=\"og:description\"]').content;\n    return ogDescription;\n  }"
+                    }
+                ],
+                "fingerprint": "1516793927400"
+            },
+            {
+                "accountId": "1008367944",
+                "containerId": "8204678",
+                "variableId": "33",
+                "name": "facebookOpenGraphImage",
+                "type": "jsm",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "javascript",
+                        "value": "function() {\n\t// grabing the content of that tag\n\t// <meta property=\"og:image\" content=\"XXXXXX\" />\n    var ogImage = document.querySelector('meta[property=\"og:image\"]').content;\n    return ogImage;\n}"
+                    }
+                ],
+                "fingerprint": "1516793942400"
+            },
+            {
+                "accountId": "1008367944",
+                "containerId": "8204678",
+                "variableId": "34",
+                "name": "facebookOpenGraphLocale",
+                "type": "jsm",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "javascript",
+                        "value": "function() {\n\t// grabing the content of that tag\n\t// <meta property=\"og:locale\" content=\"XXXXXX\" />\n    var ogLocale = document.querySelector('meta[property=\"og:locale\"]').content;\n    return ogLocale;\n}"
+                    }
+                ],
+                "fingerprint": "1516793964522"
+            },
+            {
+                "accountId": "1008367944",
+                "containerId": "8204678",
+                "variableId": "27",
+                "name": "facebookOpenGraphSiteName",
+                "type": "jsm",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "javascript",
+                        "value": "function() {\n\t// grabing the content of that tag\n\t// <meta property=\"og:site_name\" content=\"XXXXXX\" />\n    var ogSiteName = document.querySelector('meta[property=\"og:site_name\"]').content;\n    return ogSiteName;\n}"
+                    }
+                ],
+                "fingerprint": "1516793985471"
+            },
+            {
+                "accountId": "1008367944",
+                "containerId": "8204678",
+                "variableId": "28",
+                "name": "facebookOpenGraphTitle",
+                "type": "jsm",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "javascript",
+                        "value": "function() {\n\t// grabing the content of that tag\n\t// <meta property=\"og:title\" content=\"XXXXXX\" />\n    var ogTitle = document.querySelector('meta[property=\"og:title\"]');\n  \tvar ogTitle = ogTitle.getAttribute(\"content\");\n    return ogTitle;\n  }"
+                    }
+                ],
+                "fingerprint": "1516790311541"
+            },
+            {
+                "accountId": "1008367944",
+                "containerId": "8204678",
+                "variableId": "29",
+                "name": "facebookOpenGraphType",
+                "type": "jsm",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "javascript",
+                        "value": "function() {\n\t// grabing the content of that tag\n\t// <meta property=\"og:type\" content=\"XXXXXX\" />\n    var ogType = document.querySelector('meta[property=\"og:type\"]').content;\n    return ogType;\n}"
+                    }
+                ],
+                "fingerprint": "1516793999023"
+            },
+            {
+                "accountId": "1008367944",
+                "containerId": "8204678",
+                "variableId": "26",
+                "name": "seoBrowserLanguage",
+                "type": "j",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "navigator.language"
+                    }
+                ],
+                "fingerprint": "1516724521142"
+            },
+            {
+                "accountId": "1008367944",
+                "containerId": "8204678",
+                "variableId": "24",
+                "name": "seoBrowserUserAgent",
+                "type": "j",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "navigator.userAgent"
+                    }
+                ],
+                "fingerprint": "1516724439449"
+            },
+            {
+                "accountId": "1008367944",
+                "containerId": "8204678",
+                "variableId": "1",
+                "name": "seoH1",
+                "type": "jsm",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "javascript",
+                        "value": "function() {\n    var h1 = document.body.getElementsByTagName('h1');\n  \tvar seoH1Numbers = {{seoH1Number}};\n  \t\n\n\tif( seoH1Numbers == 1) {\n      \t// one H1 was found\n      \treturn h1[0].innerText\n    } else if (seoH1Numbers > 1) {\n      \t// more than one H1 found\n    \tvar i;\n  \t\tvar h1List = [];\n\t\tfor ( i = 0; i < seoH1Numbers; i++ ){\n    \t\th1List.push(h1[i].innerText)\n    \t}\n  \t\treturn h1List;\n    } else {\n    \treturn 'no H1 on page';\n    }\n}\n"
+                    }
+                ],
+                "fingerprint": "1515597837917"
+            },
+            {
+                "accountId": "1008367944",
+                "containerId": "8204678",
+                "variableId": "21",
+                "name": "seoH1Number",
+                "type": "jsm",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "javascript",
+                        "value": "function() {\n    var h1s = document.body.getElementsByTagName('h1');\n\treturn h1s.length;\n}"
+                    }
+                ],
+                "fingerprint": "1515598065119"
+            },
+            {
+                "accountId": "1008367944",
+                "containerId": "8204678",
+                "variableId": "22",
+                "name": "seoH2",
+                "type": "jsm",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "javascript",
+                        "value": "function() {\n    var h2 = document.body.getElementsByTagName('h2');\n  \tvar seoH2Numbers = {{seoH2Number}};\n  \t\n\tif( seoH2Numbers == 1) {\n      \t// one H2 was found\n      \treturn h2[0].innerText\n    } else if (seoH2Numbers > 1) {\n      \t// more than one H2 found\n    \tvar i;\n  \t\tvar h2List = [];\n\t\tfor ( i = 0; i < seoH2Numbers; i++ ){\n    \t\th2List.push(h2[i].innerText)\n    \t}\n  \t\treturn h2List;\n    } else {\n    \treturn 'no H2 on page';\n    }\n}\n"
+                    }
+                ],
+                "fingerprint": "1515597870969"
+            },
+            {
+                "accountId": "1008367944",
+                "containerId": "8204678",
+                "variableId": "20",
+                "name": "seoH2Number",
+                "type": "jsm",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "javascript",
+                        "value": "function() {\n    var h2s = document.body.getElementsByTagName('h2');\n\treturn h2s.length;\n}"
+                    }
+                ],
+                "fingerprint": "1515598073052"
+            },
+            {
+                "accountId": "1008367944",
+                "containerId": "8204678",
+                "variableId": "19",
+                "name": "seoHostname",
+                "type": "jsm",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "javascript",
+                        "value": "  function() {\n   return window.location.hostname;\n  }"
+                    }
+                ],
+                "fingerprint": "1515578888137"
+            },
+            {
+                "accountId": "1008367944",
+                "containerId": "8204678",
+                "variableId": "35",
+                "name": "seoHrefLangEN",
+                "type": "jsm",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "javascript",
+                        "value": "function() {\n\t// grabing the content of that tag\n\t// <link rel=\"alternate\" hreflang=\"en\" href=\"XXXXXX\" />\n    var hrefLangEN = document.querySelector('link[hreflang=\"en\"]');\n  \tvar hrefLangEN = hrefLangEN.getAttribute(\"href\");\n    return hrefLangEN;\n  }"
+                    }
+                ],
+                "fingerprint": "1516792563135"
+            },
+            {
+                "accountId": "1008367944",
+                "containerId": "8204678",
+                "variableId": "31",
+                "name": "seoHrefLangFR",
+                "type": "jsm",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "javascript",
+                        "value": "function() {\n\t// grabing the content of that tag\n\t// <link rel=\"alternate\" hreflang=\"fr\" href=\"XXXXXX\" />\n    var hrefLangFR = document.querySelector('link[hreflang=\"FR\"]');\n  \tvar hrefLangFR = hrefLangFR.getAttribute(\"href\");\n    return hrefLangFR;\n  }"
+                    }
+                ],
+                "fingerprint": "1516791171622"
+            },
+            {
+                "accountId": "1008367944",
+                "containerId": "8204678",
+                "variableId": "30",
+                "name": "seoHrefLangXDefault",
+                "type": "jsm",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "javascript",
+                        "value": "function() {\n\t// grabing the content of that tag\n\t// <link rel=\"alternate\" hreflang=\"x-default\" href=\"XXXXXX\" />\n    var hrefLangXDefault = document.querySelector('link[hreflang=\"x-default\"]');\n  \tvar hrefLangXDefault = hrefLangXDefault.getAttribute(\"href\");\n    return hrefLangXDefault;\n  }"
+                    }
+                ],
+                "fingerprint": "1516791126418"
+            },
+            {
+                "accountId": "1008367944",
+                "containerId": "8204678",
+                "variableId": "13",
+                "name": "seoLinksOnPage",
+                "type": "jsm",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "javascript",
+                        "value": "function() {\n    var links = document.body.getElementsByTagName(\"a\");\n\treturn links;\n}"
+                    }
+                ],
+                "fingerprint": "1515577285038"
+            },
+            {
+                "accountId": "1008367944",
+                "containerId": "8204678",
+                "variableId": "14",
+                "name": "seoLinksOnPageNumber",
+                "type": "jsm",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "javascript",
+                        "value": "function() {\n    var seoLinksOnPage = {{seoLinksOnPage}};\n    return seoLinksOnPage.length;\n}"
+                    }
+                ],
+                "fingerprint": "1515577388829"
+            },
+            {
+                "accountId": "1008367944",
+                "containerId": "8204678",
+                "variableId": "2",
+                "name": "seoMetaDescription",
+                "type": "d",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "elementSelector",
+                        "value": "meta[name=description]"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "attributeName",
+                        "value": "content"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "selectorType",
+                        "value": "CSS"
+                    }
+                ],
+                "fingerprint": "1515516367535"
+            },
+            {
+                "accountId": "1008367944",
+                "containerId": "8204678",
+                "variableId": "11",
+                "name": "seoMetaDescriptionCurrentLength",
+                "type": "jsm",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "javascript",
+                        "value": "function() {\n    var seoMetaDescription = {{seoMetaDescription}};\n    return seoMetaDescription.length;\n  }"
+                    }
+                ],
+                "fingerprint": "1515520272133"
+            },
+            {
+                "accountId": "1008367944",
+                "containerId": "8204678",
+                "variableId": "10",
+                "name": "seoMetaDescriptionMaxLength",
+                "type": "jsm",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "javascript",
+                        "value": "function() {\n    return 300;\n}"
+                    }
+                ],
+                "fingerprint": "1515520305225"
+            },
+            {
+                "accountId": "1008367944",
+                "containerId": "8204678",
+                "variableId": "9",
+                "name": "seoMetaDescriptionMinLength",
+                "type": "jsm",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "javascript",
+                        "value": "function() {\n    return 50;\n}"
+                    }
+                ],
+                "fingerprint": "1515520337372"
+            },
+            {
+                "accountId": "1008367944",
+                "containerId": "8204678",
+                "variableId": "5",
+                "name": "seoMetaRobots",
+                "type": "d",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "elementSelector",
+                        "value": "meta[name=robots]"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "attributeName",
+                        "value": "content"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "selectorType",
+                        "value": "CSS"
+                    }
+                ],
+                "fingerprint": "1515516918024"
+            },
+            {
+                "accountId": "1008367944",
+                "containerId": "8204678",
+                "variableId": "7",
+                "name": "seoMetaRobotsFollow",
+                "type": "jsm",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "javascript",
+                        "value": "function() {\n var seoMetaRobotsList = {{seoMetaRobots}}.split(', ');\n var seoMetaRobotsListLength = seoMetaRobotsList.length;\n var seoMetaRobotsFollow = 'follow';\n var i;\n\n for ( i = 0; i < seoMetaRobotsListLength; i++ ) {\n   if ( seoMetaRobotsList[i] == 'nofollow' ) {\n     seoMetaRobotsFollow = 'nofollow'\n   }\n }\n return seoMetaRobotsFollow;\n}"
+                    }
+                ],
+                "fingerprint": "1515519208564"
+            },
+            {
+                "accountId": "1008367944",
+                "containerId": "8204678",
+                "variableId": "6",
+                "name": "seoMetaRobotsIndex",
+                "type": "jsm",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "javascript",
+                        "value": "function() {\n var seoMetaRobotsList = {{seoMetaRobots}}.split(', ');\n var seoMetaRobotsListLength = seoMetaRobotsList.length;\n var seoMetaRobotsIndex = 'index';\n var i;\n\n for ( i = 0; i < seoMetaRobotsListLength; i++ ) {\n   if ( seoMetaRobotsList[i] == 'noindex' ) {\n     seoMetaRobotsIndex = 'noindex'\n   }\n }\n return seoMetaRobotsIndex;\n}"
+                    }
+                ],
+                "fingerprint": "1516793543073"
+            },
+            {
+                "accountId": "1008367944",
+                "containerId": "8204678",
+                "variableId": "37",
+                "name": "seoTestMetaRobotsIsNoFollow",
+                "type": "jsm",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "javascript",
+                        "value": "function() {\n  var seoMetaRobotsFollow = {{seoMetaRobotsFollow}};\n  if ( seoMetaRobotsFollow == 'nofollow' ) {\n  \treturn true;\n  } else {\n    return false\n  }\n}"
+                    }
+                ],
+                "fingerprint": "1516793124478"
+            },
+            {
+                "accountId": "1008367944",
+                "containerId": "8204678",
+                "variableId": "36",
+                "name": "seoTestMetaRobotsIsNoIndex",
+                "type": "jsm",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "javascript",
+                        "value": "function() {\n  var seoMetaRobotsIndex = {{seoMetaRobotsIndex}};\n  if ( seoMetaRobotsIndex == 'noindex' ) {\n  \treturn true;\n  } else {\n    return false\n  }\n}"
+                    }
+                ],
+                "fingerprint": "1516792984177"
+            },
+            {
+                "accountId": "1008367944",
+                "containerId": "8204678",
+                "variableId": "18",
+                "name": "seoTestUrlCurrentIsNotCanonical",
+                "type": "jsm",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "javascript",
+                        "value": "  function() {\n    var seoUrlCanonical = {{seoUrlCanonical}};\n    var seoUrlCurrent = {{seoUrlCurrent}};\n    if ( seoUrlCanonical == seoUrlCurrent) {\n    \treturn false\n    } else {\n      \treturn true\n    }\n  }"
+                    }
+                ],
+                "fingerprint": "1516793261413"
+            },
+            {
+                "accountId": "1008367944",
+                "containerId": "8204678",
+                "variableId": "4",
+                "name": "seoTitle",
+                "type": "d",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "elementSelector",
+                        "value": "title"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "selectorType",
+                        "value": "CSS"
+                    }
+                ],
+                "fingerprint": "1515516648007"
+            },
+            {
+                "accountId": "1008367944",
+                "containerId": "8204678",
+                "variableId": "12",
+                "name": "seoTitleCurrentLength",
+                "type": "jsm",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "javascript",
+                        "value": "function() {\n    var seoTitle = {{seoTitle}};\n    return seoTitle.length;\n  }"
+                    }
+                ],
+                "fingerprint": "1515576652439"
+            },
+            {
+                "accountId": "1008367944",
+                "containerId": "8204678",
+                "variableId": "8",
+                "name": "seoTitleMaxLength",
+                "type": "jsm",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "javascript",
+                        "value": "function() {\n\treturn 50;\n}"
+                    }
+                ],
+                "fingerprint": "1515520478988"
+            },
+            {
+                "accountId": "1008367944",
+                "containerId": "8204678",
+                "variableId": "3",
+                "name": "seoUrlCanonical",
+                "type": "jsm",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "javascript",
+                        "value": "function() {\n\t// grabing the content of that tag\n\t// <link rel=\"canonical\" href=\"XXXXXXXXX\" />\n    var seoUrlCanonical = document.querySelector('link[rel=\"canonical\"]').href;\n    return seoUrlCanonical;\n  }"
+                    }
+                ],
+                "fingerprint": "1516793913180"
+            },
+            {
+                "accountId": "1008367944",
+                "containerId": "8204678",
+                "variableId": "17",
+                "name": "seoUrlCurrent",
+                "type": "jsm",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "javascript",
+                        "value": "  function() {\n    return document.URL;\n  }"
+                    }
+                ],
+                "fingerprint": "1515577879498"
+            },
+            {
+                "accountId": "1008367944",
+                "containerId": "8204678",
+                "variableId": "16",
+                "name": "seoUrlReferrer",
+                "type": "jsm",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "javascript",
+                        "value": "  function() {\n    return document.referrer;\n  }"
+                    }
+                ],
+                "fingerprint": "1515577819062"
+            }
+        ],
+        "fingerprint": "0",
+        "tagManagerUrl": "https://tagmanager.google.com/#/versions/accounts/1008367944/containers/8204678/versions/0?apiLink=version"
+    }
+}
